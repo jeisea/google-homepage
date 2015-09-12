@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+}
+
 .navbar {
 	top: 0;
 }
@@ -5,15 +9,37 @@
 ul {
 	list-style-type: none;
 }
-.navbar ul li {
+.navbar > ul > li {
 	float: right;
+	padding-right: 10px;
+}
+
+li {
+	display: inline-block;
+}
+#logo {
+	text-align: center;
+	padding-top: 100px;
+}
+
+form {
+	text-align: center;
+}
+
+#search {
+	margin-bottom: 20px;
+	width: 500px;
+	height: 30px;
 }
 
 .footer {
-	clear: both;
-	bottom: 0;
-	color: #D3D3D3;
+	bottom: 0px;
+	position: fixed;	
+	width: 100%;
+	background-color: #D3D3D3;
+
 }
+
 
 #footer_left {
 	float: left;
@@ -21,4 +47,12 @@ ul {
 
 #footer_right {
 	float: right;
+}
+
+#footer_left li {
+	padding-left: 10px;
+}
+
+#footer_right li {
+	padding-right: 20px;
 }
